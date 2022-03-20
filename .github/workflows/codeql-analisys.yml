@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+      - gh-pages
       - dev
       - 'dev-v*'
       - 'releases/v*'

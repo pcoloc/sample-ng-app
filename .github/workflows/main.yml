@@ -45,13 +45,13 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: deploy_dist
-          path: dist
+          path: sample-version2/dist
       - name: Archive code coverage result
         if: success()
         uses: actions/upload-artifact@v1
         with:
           name: deploy_coverage
-          path: coverage
+          path: sample-version2/coverage
 
   deploy_ghpages:
       runs-on: ubuntu-latest

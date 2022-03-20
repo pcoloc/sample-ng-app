@@ -40,7 +40,7 @@ jobs:
         run: npm run build
 
       - name: Test
-        run: npm test:headless
+        run: npm run test:headless
 
       - name: Deploy ghpages
         run: ng deploy

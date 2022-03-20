@@ -38,8 +38,8 @@ jobs:
       - name: Build
         run: npm run build
 
-     # - name: Test
-     #   run: npm run test 
+      - name: Test
+        run: npm run test:headless 
       - name: Archive build
         if: success()
         uses: actions/upload-artifact@v1

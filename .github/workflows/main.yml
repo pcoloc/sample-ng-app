@@ -39,9 +39,11 @@ jobs:
       - name: Build
         run: npm run build
 
-      #- name: Test
-        #run: npm run test:headless
+      - name: Test
+        run: npm run test:headless
 
-      - name: Deploy ghpages
+      - name: Install ghpages angular
         run: npm i angular-cli-ghpages
+        
+      - name: Deploy ghpages  
         run: npm run deploy

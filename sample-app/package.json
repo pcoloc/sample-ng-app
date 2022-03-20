@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng deploy --no-silent --base-href=/sample-ng-app/ --name='Angular actions' --email='info@dra.com'",
+    "deploy": "ng deploy --no-silent --base-href=/sample-ng-app/ --name='Angular actions' --email=info@dra.com",
     "test:headless": "ng test --watch=false --browsers=ChromeHeadless"
   },
   "private": true,

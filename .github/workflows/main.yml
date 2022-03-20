@@ -43,6 +43,9 @@ jobs:
 
       - name: Test
         run: npm run test:headless
-        
+
       - name: Deploy ghpages  
-        run: npm run deploy
+        uses: actions/deploy-pages@v1
+        with: 
+          branch: main
+          folder: sample-app

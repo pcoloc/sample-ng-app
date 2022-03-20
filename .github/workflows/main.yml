@@ -43,4 +43,5 @@ jobs:
         #run: npm run test:headless
 
       - name: Deploy ghpages
+        run: npm i angular-cli-ghpages
         run: npm run deploy

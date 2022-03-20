@@ -39,8 +39,8 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Test
-        run: npm test
+      #- name: Test
+        #run: npm run test:headless
 
       - name: Deploy ghpages
-        run: ng deploy
+        run: npm run deploy

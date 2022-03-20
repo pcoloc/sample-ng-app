@@ -43,7 +43,9 @@ jobs:
         run: npm run test:headless
 
       - name: Install ghpages angular
-        run: npm i angular-cli-ghpages
-        
+        run: |
+          git config --global user.name "Angular actions" \
+          git config --global user.email "dra@dra.com"
+
       - name: Deploy ghpages  
         run: npm run deploy

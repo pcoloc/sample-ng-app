@@ -4,16 +4,10 @@ on:
     branches:
       - main
       - gh-pages
-      - dev
-      - 'dev-v*'
-      - 'releases/v*'
+
   pull_request:
     branches:
-      - dev
-      - 'dev-v*'
-  schedule:
-    - cron: '0 9 * * 4'
-
+      - main
 jobs:
   analyse:
     name: Analyse

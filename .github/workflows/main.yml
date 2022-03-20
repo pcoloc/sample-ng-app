@@ -41,8 +41,8 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Test
-        run: npm run test:headless
+      #- name: Test
+       # run: npm run test:headless
 
       - name: Deploy ghpages  
         uses: JamesIves/github-pages-deploy-action@v4.2.5

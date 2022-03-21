@@ -1,4 +1,4 @@
-name: Deploy Code to Github Pages
+name: 'Deploy Code to Github Pages'
 on:
   workflow_dispatch:
   push:
@@ -18,6 +18,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
           branch: gh-pages
-          folder: sample-version2
+          folder: frontend
           clean: false
           single-commit: true
